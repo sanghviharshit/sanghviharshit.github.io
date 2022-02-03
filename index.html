@@ -1,19 +1,19 @@
 <!DOCTYPE HTML>
 <!--
 	Aerial by HTML5 UP
-	html5up.net | @n33co
+	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
 		<title>Harshit Sanghvi</title>
-		<link rel="icon" type="image/png" href="css/images/favicon.ico">
+		<link rel="icon" type="image/png" href="assets/css/images/favicon.ico">
+		<meta charset="utf-8" />
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/skel.min.js"></script>
-		<script src="js/init.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 		<script>
 			/**
 			* Function that tracks a click on an outbound link in Google Analytics.
@@ -28,16 +28,9 @@
 			   });
 			}
 		</script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
-			<link rel="stylesheet" href="css/style-noscript.css" />
-		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="loading">
+	<body class="is-preload">
 		<div id="wrapper">
 			<div id="bg"></div>
 			<div id="overlay"></div>
@@ -50,21 +43,21 @@
 						<nav>
 							<ul>
 								<li><a href="https://github.com/sanghviharshit"
-											class="icon fa-github"><span class="label">Github</span></a></li>
+											class="icon brands fa-github"><span class="label">Github</span></a></li>
 								<li><a href="https://www.linkedin.com/in/harshitsanghvi"
-											class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+											class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								<!-- <li><a href="https://twitter.com/harshit_ps"
 											class="icon fa-twitter"><span class="label">Twitter</span></a></li> -->
 								<li><a href="https://blog.sanghviharshit.com"
-											class="icon fa-wordpress"><span class="label">Blog</span></a></li>
+											class="icon brands fa-wordpress"><span class="label">Blog</span></a></li>
 								<li><a href="https://www.instagram.com/g33kopedia"
-									class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 								<!-- <li><a href="https://facebook.com/harshit.sanghvi"
-											class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
+											class="icon brands fa-facebook"><span class="label">Facebook</span></a></li> -->
 								<!-- <li><a href="https://about.me/harshit"
-											class="icon fa-user"><span class="label">About Me</span></a></li> -->
+											class="icon brands fa-user"><span class="label">About Me</span></a></li> -->
 								<!-- <li><a href="https://drive.google.com/file/d/15-GvpUvaDz27B733EMniuRHvaSAZ6ZtA/view?usp=sharing"
-											class="icon fa-paperclip"><span class="label">Resume</span></a></li> -->
+											class="icon brands fa-paperclip"><span class="label">Resume</span></a></li> -->
 							</ul>
 						</nav>
 					</header>
@@ -82,8 +75,12 @@
 						</script>
 						<span class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
 					</footer>
-
 			</div>
 		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
 	</body>
 </html>

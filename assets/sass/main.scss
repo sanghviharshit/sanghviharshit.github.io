@@ -3,8 +3,8 @@
 @import 'libs/mixins';
 @import 'libs/vendor';
 @import 'libs/breakpoints';
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
-@import url("fontawesome-all.min.css");
+// Source Sans Pro and Font Awesome are loaded via <link> tags in index.html
+// for parallel fetching. Do not re-add @import here.
 
 /*
 	Aerial by HTML5 UP
@@ -39,7 +39,7 @@
 	$delay-overlay:			$delay-wrapper - 0.5s;
 	$delay-header:			$delay-overlay + _duration(overlay) - 0.75s;
 	$delay-nav-icons:		$delay-header + _duration(header) - 1s;
-	$delay-nav-icon:		0.25s;
+	$delay-nav-icon:		0.1s;
 
 // Reset.
 // Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain)
@@ -286,6 +286,17 @@
 		vertical-align: middle;
 		width: 90%;
 
+		.hero {
+			border-radius: 50%;
+			border: solid 2px #fff;
+			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+			display: block;
+			height: 10em;
+			margin: 0 auto 1.25em auto;
+			object-fit: cover;
+			width: 10em;
+		}
+
 		h1 {
 			font-size: 4.35em;
 			font-weight: 900;
@@ -295,8 +306,10 @@
 
 		p {
 			font-size: 1.25em;
+			font-weight: 400 !important;
 			margin: 0.75em 0 0.25em 0;
-			opacity: 0.75;
+			opacity: 1;
+			text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 		}
 
 		nav {
@@ -434,6 +447,12 @@
 		/* Header */
 
 			#header {
+				.hero {
+					height: 7em;
+					margin-bottom: 1em;
+					width: 7em;
+				}
+
 				h1 {
 					font-size: 2.5em;
 				}
@@ -475,4 +494,15 @@
 				}
 			}
 
+	}
+
+/* Reduced motion: respect user preference, disable animations and looping background scroll */
+
+	@media (prefers-reduced-motion: reduce) {
+		*, *:before, *:after {
+			animation-duration: 0.001ms !important;
+			animation-iteration-count: 1 !important;
+			transition-duration: 0.001ms !important;
+		}
+		#bg { animation: none !important; }
 	}

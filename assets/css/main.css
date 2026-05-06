@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
-@import url("fontawesome-all.min.css");
-
 /*
 	Aerial by HTML5 UP
 	html5up.net | @ajlkn
@@ -197,10 +194,10 @@ input, select, textarea {
 	}
 
 	#wrapper {
-		-moz-animation: wrapper 3s forwards;
-		-webkit-animation: wrapper 3s forwards;
-		-ms-animation: wrapper 3s forwards;
-		animation: wrapper 3s forwards;
+		-moz-animation: wrapper 0.6s forwards;
+		-webkit-animation: wrapper 0.6s forwards;
+		-ms-animation: wrapper 0.6s forwards;
+		animation: wrapper 0.6s forwards;
 		height: 100%;
 		left: 0;
 		opacity: 0;
@@ -347,10 +344,10 @@ input, select, textarea {
 	}
 
 	#overlay {
-		-moz-animation: overlay 1.5s 1.5s forwards;
-		-webkit-animation: overlay 1.5s 1.5s forwards;
-		-ms-animation: overlay 1.5s 1.5s forwards;
-		animation: overlay 1.5s 1.5s forwards;
+		-moz-animation: overlay 0.5s 0.3s forwards;
+		-webkit-animation: overlay 0.5s 0.3s forwards;
+		-ms-animation: overlay 0.5s 0.3s forwards;
+		animation: overlay 0.5s 0.3s forwards;
 		background-attachment: fixed, fixed;
 		background-image: url("images/overlay-pattern.png"), url("images/overlay.svg");
 		background-position: top left, center center;
@@ -531,10 +528,10 @@ input, select, textarea {
 	}
 
 	#header {
-		-moz-animation: header 1s 2.25s forwards;
-		-webkit-animation: header 1s 2.25s forwards;
-		-ms-animation: header 1s 2.25s forwards;
-		animation: header 1s 2.25s forwards;
+		-moz-animation: header 0.5s 0.5s forwards;
+		-webkit-animation: header 0.5s 0.5s forwards;
+		-ms-animation: header 0.5s 0.5s forwards;
+		animation: header 0.5s 0.5s forwards;
 		-moz-backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 		-ms-backface-visibility: hidden;
@@ -562,8 +559,10 @@ input, select, textarea {
 
 		#header p {
 			font-size: 1.25em;
+			font-weight: 400 !important;
 			margin: 0.75em 0 0.25em 0;
-			opacity: 0.75;
+			opacity: 1;
+			text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 		}
 
 		#header nav {
@@ -593,73 +592,73 @@ input, select, textarea {
 			}
 
 				#header nav li:nth-child(1) {
-					-moz-animation-delay: 2.5s;
-					-webkit-animation-delay: 2.5s;
-					-ms-animation-delay: 2.5s;
-					animation-delay: 2.5s;
+					-moz-animation-delay: 0.85s;
+					-webkit-animation-delay: 0.85s;
+					-ms-animation-delay: 0.85s;
+					animation-delay: 0.85s;
 				}
 
 				#header nav li:nth-child(2) {
-					-moz-animation-delay: 2.75s;
-					-webkit-animation-delay: 2.75s;
-					-ms-animation-delay: 2.75s;
-					animation-delay: 2.75s;
+					-moz-animation-delay: 0.95s;
+					-webkit-animation-delay: 0.95s;
+					-ms-animation-delay: 0.95s;
+					animation-delay: 0.95s;
 				}
 
 				#header nav li:nth-child(3) {
-					-moz-animation-delay: 3s;
-					-webkit-animation-delay: 3s;
-					-ms-animation-delay: 3s;
-					animation-delay: 3s;
+					-moz-animation-delay: 1.05s;
+					-webkit-animation-delay: 1.05s;
+					-ms-animation-delay: 1.05s;
+					animation-delay: 1.05s;
 				}
 
 				#header nav li:nth-child(4) {
-					-moz-animation-delay: 3.25s;
-					-webkit-animation-delay: 3.25s;
-					-ms-animation-delay: 3.25s;
-					animation-delay: 3.25s;
+					-moz-animation-delay: 1.15s;
+					-webkit-animation-delay: 1.15s;
+					-ms-animation-delay: 1.15s;
+					animation-delay: 1.15s;
 				}
 
 				#header nav li:nth-child(5) {
-					-moz-animation-delay: 3.5s;
-					-webkit-animation-delay: 3.5s;
-					-ms-animation-delay: 3.5s;
-					animation-delay: 3.5s;
+					-moz-animation-delay: 1.25s;
+					-webkit-animation-delay: 1.25s;
+					-ms-animation-delay: 1.25s;
+					animation-delay: 1.25s;
 				}
 
 				#header nav li:nth-child(6) {
-					-moz-animation-delay: 3.75s;
-					-webkit-animation-delay: 3.75s;
-					-ms-animation-delay: 3.75s;
-					animation-delay: 3.75s;
+					-moz-animation-delay: 1.35s;
+					-webkit-animation-delay: 1.35s;
+					-ms-animation-delay: 1.35s;
+					animation-delay: 1.35s;
 				}
 
 				#header nav li:nth-child(7) {
-					-moz-animation-delay: 4s;
-					-webkit-animation-delay: 4s;
-					-ms-animation-delay: 4s;
-					animation-delay: 4s;
+					-moz-animation-delay: 1.45s;
+					-webkit-animation-delay: 1.45s;
+					-ms-animation-delay: 1.45s;
+					animation-delay: 1.45s;
 				}
 
 				#header nav li:nth-child(8) {
-					-moz-animation-delay: 4.25s;
-					-webkit-animation-delay: 4.25s;
-					-ms-animation-delay: 4.25s;
-					animation-delay: 4.25s;
+					-moz-animation-delay: 1.55s;
+					-webkit-animation-delay: 1.55s;
+					-ms-animation-delay: 1.55s;
+					animation-delay: 1.55s;
 				}
 
 				#header nav li:nth-child(9) {
-					-moz-animation-delay: 4.5s;
-					-webkit-animation-delay: 4.5s;
-					-ms-animation-delay: 4.5s;
-					animation-delay: 4.5s;
+					-moz-animation-delay: 1.65s;
+					-webkit-animation-delay: 1.65s;
+					-ms-animation-delay: 1.65s;
+					animation-delay: 1.65s;
 				}
 
 				#header nav li:nth-child(10) {
-					-moz-animation-delay: 4.75s;
-					-webkit-animation-delay: 4.75s;
-					-ms-animation-delay: 4.75s;
-					animation-delay: 4.75s;
+					-moz-animation-delay: 1.75s;
+					-webkit-animation-delay: 1.75s;
+					-ms-animation-delay: 1.75s;
+					animation-delay: 1.75s;
 				}
 
 			#header nav a {
@@ -1084,3 +1083,33 @@ input, select, textarea {
 		#header nav {
 			padding: 0 1em;
 		} }
+
+/* Hero profile image */
+	#header .hero {
+		border-radius: 50%;
+		border: solid 2px #fff;
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+		display: block;
+		height: 10em;
+		margin: 0 auto 1.25em auto;
+		object-fit: cover;
+		width: 10em;
+	}
+
+	@media screen and (max-width: 736px) {
+		#header .hero {
+			height: 7em;
+			margin-bottom: 1em;
+			width: 7em;
+		}
+	}
+
+/* Reduced motion: respect user preference, disable animations and looping background scroll */
+@media (prefers-reduced-motion: reduce) {
+	*, *:before, *:after {
+		animation-duration: 0.001ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.001ms !important;
+	}
+	#bg { animation: none !important; }
+}

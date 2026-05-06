@@ -4,18 +4,19 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
 		<!-- HTML Meta Tags -->
 		<title>Harshit Sanghvi - Personal Website</title>
 		<meta name="description" content="This is Harshit Sanghvi's personal website. It has links to Harshit's social and professional online presence.">
+		<link rel="canonical" href="https://sanghviharshit.com/">
 
 		<!-- Facebook Meta Tags -->
 		<meta property="og:url" content="https://sanghviharshit.com/">
 		<meta property="og:type" content="website">
 		<meta property="og:title" content="Harshit Sanghvi - Personal Website">
 		<meta property="og:description" content="This is Harshit Sanghvi's personal website. It has links to Harshit's social and professional online presence.">
-		<meta property="og:image" content="https://blog.sanghviharshit.com/wp-content/uploads/2022/03/profile.jpg">
+		<meta property="og:image" content="https://sanghviharshit.com/assets/css/images/profile.jpg">
 
 		<!-- Twitter Meta Tags -->
 		<meta name="twitter:card" content="summary_large_image">
@@ -23,15 +24,22 @@
 		<meta property="twitter:url" content="https://sanghviharshit.com/">
 		<meta name="twitter:title" content="Harshit Sanghvi - Personal Website">
 		<meta name="twitter:description" content="This is Harshit Sanghvi's personal website. It has links to Harshit's social and professional online presence.">
-		<meta name="twitter:image" content="https://blog.sanghviharshit.com/wp-content/uploads/2022/03/profile.jpg">
+		<meta name="twitter:image" content="https://sanghviharshit.com/assets/css/images/profile.jpg">
 
 		<!-- Meta Tags Generated via https://www.opengraph.xyz -->
 
-		<link rel="icon" type="image/png" href="assets/css/images/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="assets/css/images/favicon.ico">
 		<meta charset="utf-8" />
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="keywords" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preload" as="image" href="assets/css/images/hero.jpg" fetchpriority="high">
+		<link rel="preload" as="image" href="assets/css/images/bg.jpg">
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900&display=swap" />
+		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 
 		<!-- Google tag (gtag.js) -->
@@ -44,20 +52,6 @@
 			gtag('config', 'G-Q0X0DTHYHQ');
 		</script>
 
-		<script>
-			/**
-			* Function that tracks a click on an outbound link in Google Analytics.
-			* This function takes a valid URL string as an argument, and uses that URL string
-			* as the event label.
-			*/
-			var trackOutboundLink = function(url) {
-			   ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
-			     function () {
-			     document.location = url;
-			     }
-			   });
-			}
-		</script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -68,17 +62,18 @@
 
 				<!-- Header -->
 					<header id="header">
+						<img class="hero" src="assets/css/images/hero.jpg" alt="Harshit Sanghvi" width="160" height="160" />
 						<h1>Harshit Sanghvi</h1>
 						<p>Software Developer - Salesforce &nbsp;&bull;&nbsp; MS CS - New York University</p>
 						<nav>
 							<ul>
-								<li><a href="https://github.com/sanghviharshit"
+								<li><a href="https://github.com/sanghviharshit" aria-label="GitHub"
 											class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="https://www.linkedin.com/in/harshitsanghvi"
+								<li><a href="https://www.linkedin.com/in/harshitsanghvi" aria-label="LinkedIn"
 											class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<!-- <li><a href="https://twitter.com/harshit_ps"
+								<!-- <li><a href="https://twitter.com/harshit_ps" aria-label="Twitter"
 											class="icon fa-twitter"><span class="label">Twitter</span></a></li> -->
-								<li><a href="https://blog.sanghviharshit.com"
+								<li><a href="https://blog.sanghviharshit.com" aria-label="Blog"
 											class="icon brands fa-wordpress"><span class="label">Blog</span></a></li>
 								<!-- <li><a href="https://www.instagram.com/harshit_ps"
 									class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
@@ -99,7 +94,9 @@
 			</div>
 		</div>
 		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
+			document.addEventListener('DOMContentLoaded', function() {
+				document.body.classList.remove('is-preload');
+			});
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
 		</script>

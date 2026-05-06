@@ -6,32 +6,33 @@
 -->
 <html lang="en">
 	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 		<!-- HTML Meta Tags -->
-		<title>Harshit Sanghvi - Personal Website</title>
-		<meta name="description" content="This is Harshit Sanghvi's personal website. It has links to Harshit's social and professional online presence.">
+		<title>Harshit Sanghvi — Software Developer at Salesforce</title>
+		<meta name="description" content="Harshit Sanghvi — Software Developer at Salesforce, MS Computer Science from New York University. Find me on GitHub, LinkedIn, and my personal blog.">
 		<link rel="canonical" href="https://sanghviharshit.com/">
 
-		<!-- Facebook Meta Tags -->
+		<!-- Open Graph -->
+		<meta property="og:site_name" content="Harshit Sanghvi">
+		<meta property="og:locale" content="en_US">
 		<meta property="og:url" content="https://sanghviharshit.com/">
 		<meta property="og:type" content="website">
-		<meta property="og:title" content="Harshit Sanghvi - Personal Website">
-		<meta property="og:description" content="This is Harshit Sanghvi's personal website. It has links to Harshit's social and professional online presence.">
+		<meta property="og:title" content="Harshit Sanghvi — Software Developer at Salesforce">
+		<meta property="og:description" content="Harshit Sanghvi — Software Developer at Salesforce, MS Computer Science from New York University. Find me on GitHub, LinkedIn, and my personal blog.">
 		<meta property="og:image" content="https://sanghviharshit.com/assets/css/images/profile.jpg">
+		<meta property="og:image:alt" content="Portrait of Harshit Sanghvi">
 
-		<!-- Twitter Meta Tags -->
-		<meta name="twitter:card" content="summary_large_image">
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary">
 		<meta property="twitter:domain" content="sanghviharshit.com">
 		<meta property="twitter:url" content="https://sanghviharshit.com/">
-		<meta name="twitter:title" content="Harshit Sanghvi - Personal Website">
-		<meta name="twitter:description" content="This is Harshit Sanghvi's personal website. It has links to Harshit's social and professional online presence.">
+		<meta name="twitter:title" content="Harshit Sanghvi — Software Developer at Salesforce">
+		<meta name="twitter:description" content="Harshit Sanghvi — Software Developer at Salesforce, MS Computer Science from New York University. Find me on GitHub, LinkedIn, and my personal blog.">
 		<meta name="twitter:image" content="https://sanghviharshit.com/assets/css/images/profile.jpg">
 
-		<!-- Meta Tags Generated via https://www.opengraph.xyz -->
-
 		<link rel="icon" type="image/x-icon" href="assets/css/images/favicon.ico">
-		<meta charset="utf-8" />
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,6 +42,33 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900&display=swap" />
 		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<!-- Person schema for search engines -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Harshit Sanghvi",
+			"url": "https://sanghviharshit.com/",
+			"image": "https://sanghviharshit.com/assets/css/images/profile.jpg",
+			"jobTitle": "Software Developer",
+			"worksFor": {
+				"@type": "Organization",
+				"name": "Salesforce",
+				"url": "https://www.salesforce.com/"
+			},
+			"alumniOf": {
+				"@type": "CollegeOrUniversity",
+				"name": "New York University",
+				"url": "https://www.nyu.edu/"
+			},
+			"sameAs": [
+				"https://github.com/sanghviharshit",
+				"https://www.linkedin.com/in/harshitsanghvi",
+				"https://blog.sanghviharshit.com"
+			]
+		}
+		</script>
 
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q0X0DTHYHQ"></script>
@@ -67,13 +95,13 @@
 						<p>Software Developer - Salesforce &nbsp;&bull;&nbsp; MS CS - New York University</p>
 						<nav>
 							<ul>
-								<li><a href="https://github.com/sanghviharshit" aria-label="GitHub"
+								<li><a href="https://github.com/sanghviharshit" rel="me" aria-label="GitHub"
 											class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="https://www.linkedin.com/in/harshitsanghvi" aria-label="LinkedIn"
+								<li><a href="https://www.linkedin.com/in/harshitsanghvi" rel="me" aria-label="LinkedIn"
 											class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<!-- <li><a href="https://twitter.com/harshit_ps" aria-label="Twitter"
+								<!-- <li><a href="https://twitter.com/harshit_ps" rel="me" aria-label="Twitter"
 											class="icon fa-twitter"><span class="label">Twitter</span></a></li> -->
-								<li><a href="https://blog.sanghviharshit.com" aria-label="Blog"
+								<li><a href="https://blog.sanghviharshit.com" rel="me" aria-label="Blog"
 											class="icon brands fa-wordpress"><span class="label">Blog</span></a></li>
 								<!-- <li><a href="https://www.instagram.com/harshit_ps"
 									class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
@@ -89,7 +117,7 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<span class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+						<span class="copyright">&copy; Harshit Sanghvi. Design: <a href="https://html5up.net">HTML5 UP</a>.</span>
 					</footer>
 			</div>
 		</div>

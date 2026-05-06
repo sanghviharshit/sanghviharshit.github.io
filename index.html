@@ -96,20 +96,28 @@
 						<nav>
 							<ul>
 								<li><a href="https://github.com/sanghviharshit" rel="me" aria-label="GitHub"
+											data-social="github"
 											class="icon brands fa-github"><span class="label">Github</span></a></li>
 								<li><a href="https://www.linkedin.com/in/harshitsanghvi" rel="me" aria-label="LinkedIn"
+											data-social="linkedin"
 											class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								<!-- <li><a href="https://twitter.com/harshit_ps" rel="me" aria-label="Twitter"
+											data-social="twitter"
 											class="icon fa-twitter"><span class="label">Twitter</span></a></li> -->
 								<li><a href="https://blog.sanghviharshit.com" rel="me" aria-label="Blog"
+											data-social="blog"
 											class="icon brands fa-wordpress"><span class="label">Blog</span></a></li>
 								<!-- <li><a href="https://www.instagram.com/harshit_ps"
-									class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+											data-social="instagram"
+											class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
 								<!-- <li><a href="https://facebook.com/harshit.sanghvi"
+											data-social="facebook"
 											class="icon brands fa-facebook"><span class="label">Facebook</span></a></li> -->
 								<!-- <li><a href="https://about.me/harshit"
+											data-social="about"
 											class="icon brands fa-user"><span class="label">About Me</span></a></li> -->
 								<!-- <li><a href="https://drive.google.com/file/d/15-GvpUvaDz27B733EMniuRHvaSAZ6ZtA/view?usp=sharing"
+											data-social="resume"
 											class="icon brands fa-paperclip"><span class="label">Resume</span></a></li> -->
 							</ul>
 						</nav>
@@ -124,6 +132,14 @@
 		<script>
 			document.addEventListener('DOMContentLoaded', function() {
 				document.body.classList.remove('is-preload');
+			});
+			document.addEventListener('click', function(e) {
+				var a = e.target.closest && e.target.closest('a[data-social]');
+				if (!a || typeof gtag !== 'function') return;
+				gtag('event', 'social_click', {
+					link: a.dataset.social,
+					url: a.href
+				});
 			});
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
